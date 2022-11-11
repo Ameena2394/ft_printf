@@ -24,8 +24,8 @@ static size_t	ft_address(const unsigned long n)
 
 size_t	ft_ptr(void *add)
 {
-	if (!add)
-		return (ft_str("(nil)"));
+	if (add == 0)
+		return (ft_str("0x0"));
 	ft_str("0x");
 	return (2 + ft_address((unsigned long) add));
 }
