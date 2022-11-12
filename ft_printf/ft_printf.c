@@ -28,9 +28,9 @@ static size_t	conversion(const char *c, size_t *i, va_list *ap)
 	else if (*(c + 1) == 'u')
 		return (ft_unsign(va_arg(*ap, unsigned int)));
 	else if (*(c + 1) == 'x')
-		return (ft_hexa_x(va_arg(*ap, int)));
+		return (ft_hexa_lower(va_arg(*ap, int)));
 	else if (*(c + 1) == 'X')
-		return (ft_hexa_XX(va_arg(*ap, int)));
+		return (ft_hexa_upper(va_arg(*ap, int)));
 	else if (*(c + 1))
 		return (ft_char(*(c + 1)));
 	else
@@ -54,4 +54,3 @@ int	ft_printf(const char *str, ...)
 	va_end(ap);
 	return (len);
 }
-

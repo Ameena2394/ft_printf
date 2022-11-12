@@ -12,7 +12,7 @@
 
 NAME = libftprintf.a
 
-SOURCES = ft_char.c ft_hexa_x.c ft_hexa_XX.c ft_nbr.c ft_printf.c \
+SOURCES = ft_char.c ft_hexa_lower.c ft_hexa_upper.c ft_nbr.c ft_printf.c \
 			ft_ptr.c ft_str.c ft_unsign.c \
 
 OBJECTS = $(SOURCES:.c=.o)

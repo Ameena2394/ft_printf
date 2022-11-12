@@ -33,4 +33,3 @@ size_t	ft_nbr(const int n)
 	else
 		return (nb_nb(nb));
 }
-
