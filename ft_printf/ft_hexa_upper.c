@@ -11,10 +11,10 @@
 /* ************************************************************************** */
 #include "ft_printf.h"
 
-size_t	ft_hexa_xx(const unsigned int n)
+size_t	ft_hexa_upper(const unsigned int n)
 {
 	if (n / 16)
-		return (ft_hexa_xx(n / 16) + ft_hexa_xx(n % 16));
+		return (ft_hexa_upper(n / 16) + ft_hexa_upper(n % 16));
 	else if (!(n / 10))
 		ft_char(n + '0');
 	else
